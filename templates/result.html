@@ -1,32 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-    <<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
-</head>
-<body>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>My Webpage</title>
+	</head>
 
-	<header>
-		<div class="container">
-		<div id="brandname">
-			ML App
-		</div>
-		<h2>Spam Detector For SMS Messages</h2>
-		
-	</div>
-	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
-	<div class="results">
+	<body>
+		<form action="https://bank-customer-churn.herokuapp.com/">
+			
+			<br>
+			CreditScore
+			<br>
+			<input type="text" name="CreditScore" value="0">
+			
+			<br>
+			Geography
+			<br>
+			<input type="text" name="Geography" value="0">
+			
+			<br>
+			Gender
+			<br>
+			<input type="text" name="Gender" value="0">
+			
+			<br>
+			Age
+			<br>
+			<input type="text" name="Age" value="0">
+			
+			<br>
+			Tenure
+			<br>
+			<input type="text" name="Tenure" value="0">
+			
+			<br>
+			Balance
+			<br>
+			<input type="text" name="Balance" value="0">
+			
+			<br>
+			NumOfProducts
+			<br>
+			<input type="text" name="NumOfProducts" value="0">
+			
+			<br>
+			HasCrCard
+			<br>
+			<input type="text" name="HasCrCard" value="0">
+			
+			<br>
+			IsActiveMember
+			<br>
+			<input type="text" name="IsActiveMember" value="0">
+			
+			<br>
+			EstimatedSalary
+			<br>
+			<input type="text" name="EstimatedSalary" value="0">
+			
+			<br>
+			<input type="submit" value="Submit" method="get">
+		</form>
 
-
-		
-	{% if prediction == 1%}
-	<h2 style="color:red;">Spam</h2>
-	{% elif prediction == 0%}
-	<h2 style="color:blue;">Not a Spam (It is a Ham)</h2>
-	{% endif %}
-
-	</div>
-
-</body>
-</html>
+		<p>
+			prediction: 
+			<br>
+			Churn:0% 
+			<br>
+			Non-Churn:0% 
+		</p>
+	
+</body></html>
